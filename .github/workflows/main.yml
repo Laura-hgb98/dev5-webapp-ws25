@@ -128,7 +128,7 @@ jobs:
       - name: Analyze projects
         uses: aquasecurity/trivy-action@v0.36.0
         with: 
-          scan-type; "fs"
+          scan-type: "fs"
           format: "sarif"
           output: "trivy-results.sarif"
       - name: Upload trivy scan results to GitHub security tab
